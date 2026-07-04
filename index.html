@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Kumar | MERN Full Stack Developer</title>
+    <meta name="description" content="Personal developer portfolio of Siddharth Kumar, MERN Full Stack Developer and Computer Science Undergraduate based in Bhubaneswar, Odisha.">
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- EmailJS SDK CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-portfolio">
+    <!-- Ambient Gradients & Glows -->
+    <div class="ambient-glow glow-purple"></div>
+    <div class="ambient-glow glow-cyan"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <span class="monogram">SK</span>
+                <span class="brand-name">Siddharth Kumar</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline btn-sm magnetic-btn">
+                    <span>Hire Me</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Single Page Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="section hero-section" id="hero">
+            <div class="container hero-grid">
+                <!-- Left Column -->
+                <div class="hero-content">
+                    <div class="hero-label fade-in-up">
+                        <span class="pulse-dot"></span>
+                        <span>HELLO, I'M</span>
+                    </div>
+
+                    <h1 class="hero-title fade-in-up delay-1">
+                        Siddharth Kumar
+                    </h1>
+
+                    <h2 class="hero-subtitle fade-in-up delay-2">
+                        MERN Full Stack Developer
+                    </h2>
+
+                    <p class="hero-desc fade-in-up delay-3">
+                        Computer Science undergraduate passionate about building scalable web applications and solving real-world problems using clean and maintainable code.
+                    </p>
+
+                    <div class="hero-buttons fade-in-up delay-4">
+                        <a href="#projects" class="btn btn-primary btn-lg magnetic-btn">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-down-right" class="icon-sm"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/18aQNaiRgVy8djwBAsO7n_i9QJC6dZ2bO/view?usp=drive_link" class="btn btn-glass btn-lg magnetic-btn" onclick="alert('Downloading Siddharth Kumar Resume...')">
+                            <i data-lucide="download" class="icon-sm"></i>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials fade-in-up delay-5">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-icon magnetic-btn" title="GitHub Profile">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-icon magnetic-btn" title="LinkedIn Profile">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:siddharthkumar5364@gmail.com" aria-label="Email" class="social-icon magnetic-btn" title="Send Email">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Signature 3D Glass Sphere Scene -->
+                <div class="hero-3d-visual fade-in delay-2">
+                    <div id="hero-sphere-canvas"></div>
+                    <div class="sphere-label">
+                        <span class="code-pill">React • Node • MongoDB • Express</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Left: Profile Showcase -->
+                    <div class="about-visual">
+                        <div class="profile-circle-container">
+                            <div class="gradient-ring"></div>
+                            <div class="profile-inner-glass">
+                                <!-- Place your photo in this folder and name it 'profile.jpg', 'profile.png', or 'siddharth.jpg' -->
+                                <img src="Profile.jpg" alt="Siddharth Kumar" class="profile-photo" id="profile-photo" onerror="if (this.src.endsWith('profile.jpg')) { this.src = 'profile.png'; } else if (this.src.endsWith('profile.png')) { this.src = 'siddharth.jpg'; } else if (this.src.endsWith('siddharth.jpg')) { this.src = 'photo.jpg'; } else { this.style.display='none'; document.getElementById('profile-monogram').style.display='flex'; }">
+                                <span class="profile-monogram" id="profile-monogram" style="display: none;">SK</span>
+                                <div class="floating-particle p1"></div>
+                                <div class="floating-particle p2"></div>
+                                <div class="floating-particle p3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: About Me Details -->
+                    <div class="about-content">
+                        <div class="section-badge">ABOUT ME</div>
+                        <h2 class="section-heading">Architecting Modern Digital Products</h2>
+                        
+                        <div class="about-meta">
+                            <div class="meta-item">
+                                <i data-lucide="user" class="meta-icon"></i>
+                                <span><strong>Siddharth Kumar</strong></span>
+                            </div>
+                            <div class="meta-item">
+                                <i data-lucide="map-pin" class="meta-icon"></i>
+                                <span>Nawada, Bihar</span>
+                            </div>
+                            <div class="meta-item">
+                                <i data-lucide="graduation-cap" class="meta-icon"></i>
+                                <span>Computer Science Undergraduate</span>
+                            </div>
+                            <div class="meta-item">
+                                <i data-lucide="code" class="meta-icon"></i>
+                                <span>MERN Full Stack Developer</span>
+                            </div>
+                        </div>
+
+                        <p class="about-text">
+                            I enjoy building scalable full-stack applications and transforming ideas into modern digital products. I love creating responsive interfaces, designing APIs, and solving real-world problems through technology.
+                        </p>
+
+                        <div class="qualities-cloud">
+                            <span class="quality-badge"><i data-lucide="check-circle-2"></i> Problem Solver</span>
+                            <span class="quality-badge"><i data-lucide="check-circle-2"></i> Continuous Learner</span>
+                            <span class="quality-badge"><i data-lucide="check-circle-2"></i> Full Stack Developer</span>
+                            <span class="quality-badge"><i data-lucide="check-circle-2"></i> Clean Code Enthusiast</span>
+                            <span class="quality-badge"><i data-lucide="check-circle-2"></i> Team Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-badge">TECHNICAL ARSENAL</div>
+                    <h2 class="section-heading">Skills & Technologies</h2>
+                    <p class="section-subtext">A meticulously honed ecosystem of programming languages, libraries, databases, and developer tools.</p>
+                </div>
+
+                <div class="skills-cloud">
+                    <div class="skill-pill magnetic-btn"><i data-lucide="terminal"></i> <span>Java</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="code-2"></i> <span>JavaScript</span></div>
+                    <div class="skill-pill magnetic-btn accent-purple"><i data-lucide="atom"></i> <span>React.js</span></div>
+                    <div class="skill-pill magnetic-btn accent-cyan"><i data-lucide="server"></i> <span>Node.js</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="cpu"></i> <span>Express.js</span></div>
+                    <div class="skill-pill magnetic-btn accent-purple"><i data-lucide="database"></i> <span>MongoDB</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="file-code"></i> <span>HTML5</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="palette"></i> <span>CSS3</span></div>
+                    <div class="skill-pill magnetic-btn accent-cyan"><i data-lucide="wind"></i> <span>Tailwind CSS</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="layout"></i> <span>Bootstrap</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="globe"></i> <span>REST APIs</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="git-branch"></i> <span>Git</span></div>
+                    <div class="skill-pill magnetic-btn"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> <span>GitHub</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="send"></i> <span>Postman</span></div>
+                    <div class="skill-pill magnetic-btn"><i data-lucide="monitor"></i> <span>VS Code</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">SELECTED WORK</div>
+                    <h2 class="section-heading">Featured Projects</h2>
+                    <p class="section-subtext">Engineered from scratch with clean architecture, robust backends, and elegant user interfaces.</p>
+                </div>
+
+                <div class="projects-list">
+                    <!-- PROJECT 1 -->
+                    <div class="project-window glass-window">
+                        <div class="window-titlebar">
+                            <div class="window-controls">
+                                <span class="dot close"></span>
+                                <span class="dot min"></span>
+                                <span class="dot max"></span>
+                            </div>
+                            <div class="window-url">https://appointment-booking-frontend-6clx.onrender.com</div>
+                            <div class="window-spacer"></div>
+                        </div>
+
+                        <div class="window-content project-grid">
+                            <div class="project-details">
+                                <span class="project-num">PROJECT 01</span>
+                                <h3 class="project-title">Appointment Booking System</h3>
+                                
+                                <div class="tech-stack">
+                                    <span class="tech-pill">React</span>
+                                    <span class="tech-pill">Node.js</span>
+                                    <span class="tech-pill">Express</span>
+                                    <span class="tech-pill">MongoDB</span>
+                                </div>
+
+                                <ul class="project-highlights">
+                                    <li><strong>Authentication & Authorization:</strong> JWT-based secure user sessions and role permissions.</li>
+                                    <li><strong>REST APIs:</strong> Modular API endpoints handling schedules and doctor availability.</li>
+                                    <li><strong>Appointment Scheduling:</strong> Conflict-free real-time booking slot reservation.</li>
+                                    <li><strong>User Management:</strong> Dedicated dashboard for patients and medical administrators.</li>
+                                </ul>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com" target="_blank" class="btn btn-glass btn-sm magnetic-btn">
+                                        <svg class="icon-svg icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://appointment-booking-frontend-6clx.onrender.com" class="btn btn-primary btn-sm magnetic-btn">
+                                        <span>Live Demo</span>
+                                        <i data-lucide="external-link" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-visual mockup-booking">
+                                <div class="mockup-card">
+                                    <div class="mc-header">
+                                        <span>Dr. A. Sharma // Cardiology</span>
+                                        <span class="status-online">Available</span>
+                                    </div>
+                                    <div class="mc-slots">
+                                        <div class="slot">09:30 AM</div>
+                                        <div class="slot active">11:00 AM</div>
+                                        <div class="slot">02:30 PM</div>
+                                        <div class="slot">04:00 PM</div>
+                                    </div>
+                                    <div class="mc-btn">Confirm Reservation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 2 -->
+                    <div class="project-window glass-window">
+                        <div class="window-titlebar">
+                            <div class="window-controls">
+                                <span class="dot close"></span>
+                                <span class="dot min"></span>
+                                <span class="dot max"></span>
+                            </div>
+                            <div class="window-url">https://dailyscribe-server.vercel.app</div>
+                            <div class="window-spacer"></div>
+                        </div>
+
+                        <div class="window-content project-grid reverse">
+                            <div class="project-details">
+                                <span class="project-num">PROJECT 02</span>
+                                <h3 class="project-title">Blogging Application</h3>
+                                
+                                <div class="tech-stack">
+                                    <span class="tech-pill">React</span>
+                                    <span class="tech-pill">Node.js</span>
+                                    <span class="tech-pill">MongoDB</span>
+                                    <span class="tech-pill accent">Gemini AI</span>
+                                </div>
+
+                                <ul class="project-highlights">
+                                    <li><strong>CRUD Operations:</strong> Complete article lifecycle with drafts and markdown rendering.</li>
+                                    <li><strong>Comments & Interaction:</strong> Real-time discussion thread and engagement metrics.</li>
+                                    <li><strong>Image Uploads:</strong> Optimized cloud image storage with automatic compression.</li>
+                                    <li><strong>Gemini Integration:</strong> AI-powered article drafting, summary generation, and grammar polish.</li>
+                                    <li><strong>Database Optimization:</strong> Indexed queries for high-throughput read operations.</li>
+                                </ul>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com" target="_blank" class="btn btn-glass btn-sm magnetic-btn">
+                                        <svg class="icon-svg icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://dailyscribe-server.vercel.app" class="btn btn-primary btn-sm magnetic-btn">
+                                        <span>Live Demo</span>
+                                        <i data-lucide="external-link" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-visual mockup-blog">
+                                <div class="mockup-card">
+                                    <div class="ai-banner">
+                                        <i data-lucide="sparkles"></i>
+                                        <span>Gemini AI Copilot Active</span>
+                                    </div>
+                                    <div class="editor-lines">
+                                        <div class="line title">The Architecture of Modern Web Platforms</div>
+                                        <div class="line text">Leveraging MERN stack and AI assistants to ship production code...</div>
+                                        <div class="line ai-suggestion">✨ Suggestion: Add section on MongoDB indexing benchmarks.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 3 -->
+                    <div class="project-window glass-window">
+                        <div class="window-titlebar">
+                            <div class="window-controls">
+                                <span class="dot close"></span>
+                                <span class="dot min"></span>
+                                <span class="dot max"></span>
+                            </div>
+                            <div class="window-url">https://fitquest-app.io/dashboard</div>
+                            <div class="window-spacer"></div>
+                        </div>
+
+                        <div class="window-content project-grid">
+                            <div class="project-details">
+                                <span class="project-num">PROJECT 03</span>
+                                <h3 class="project-title">FitQuest</h3>
+                                
+                                <div class="tech-stack">
+                                    <span class="tech-pill">React</span>
+                                    <span class="tech-pill">Node.js</span>
+                                    <span class="tech-pill">Express</span>
+                                    <span class="tech-pill">MongoDB</span>
+                                    <span class="tech-pill accent-cyan">Socket.io</span>
+                                </div>
+
+                                <ul class="project-highlights">
+                                    <li><strong>Workout & Nutrition Tracking:</strong> Comprehensive logging with caloric breakdown.</li>
+                                    <li><strong>AI Coaching:</strong> Tailored workout routines generated based on user goals.</li>
+                                    <li><strong>Leaderboards & Friend Battles:</strong> Real-time Socket.io multiplayer challenges.</li>
+                                    <li><strong>Gamification & Notifications:</strong> Earn badges, level up XP, and receive push notifications.</li>
+                                </ul>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com" target="_blank" class="btn btn-glass btn-sm magnetic-btn">
+                                        <svg class="icon-svg icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm magnetic-btn">
+                                        <span>Live Demo</span>
+                                        <i data-lucide="external-link" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-visual mockup-fitquest">
+                                <div class="mockup-card">
+                                    <div class="fq-top">
+                                        <span>Level 14 Athlete</span>
+                                        <span class="xp-badge">+450 XP Today</span>
+                                    </div>
+                                    <div class="fq-battle">
+                                        <div class="player">YOU // 8,420 steps</div>
+                                        <div class="vs">VS</div>
+                                        <div class="opponent">ALEX // 7,910 steps</div>
+                                    </div>
+                                    <div class="fq-progress"><div class="bar"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Education & Certifications Section -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">CREDENTIALS</div>
+                    <h2 class="section-heading">Education & Certifications</h2>
+                    <p class="section-subtext">My academic background in Computer Science and specialized industry certifications.</p>
+                </div>
+
+                <div class="edu-grid">
+                    <!-- Vertical Timeline -->
+                    <div class="timeline-container">
+                        <h3 class="sub-heading"><i data-lucide="book-open" class="icon-md"></i> Academic Journey</h3>
+                        
+                        <div class="vertical-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-node active"></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="tl-year">Undergraduate</div>
+                                    <h4 class="tl-title">B.Tech – Computer Science and Engineering</h4>
+                                    <div class="tl-inst">Gandhi Engineering College (BPUT)</div>
+                                    <div class="tl-score badge-score">CGPA: 8.2</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-node"></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="tl-year">12th Senior Secondary</div>
+                                    <h4 class="tl-title">Intermediate (Science)</h4>
+                                    <div class="tl-inst">BSEB</div>
+                                    <div class="tl-score">Percentage: 71%</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-node"></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="tl-year">10th Matriculation</div>
+                                    <h4 class="tl-title">Secondary School Examination</h4>
+                                    <div class="tl-inst">CBSE</div>
+                                    <div class="tl-score">Percentage: 72.8%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Side Grid -->
+                    <div class="certifications-container">
+                        <h3 class="sub-heading"><i data-lucide="award" class="icon-md"></i> Professional Certifications</h3>
+                        
+                        <div class="cert-cards">
+                            <div class="cert-card glass-panel magnetic-btn">
+                                <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+                                <div class="cert-info">
+                                    <h4>Frontend Development</h4>
+                                    <span>SEED Infosys</span>
+                                </div>
+                            </div>
+
+                            <div class="cert-card glass-panel magnetic-btn">
+                                <div class="cert-icon purple"><i data-lucide="file-badge"></i></div>
+                                <div class="cert-info">
+                                    <h4>Programming in Java</h4>
+                                    <span>NPTEL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="section-badge">GET IN TOUCH</div>
+                        <h2 class="contact-heading">Let's Connect</h2>
+                        <p class="contact-desc">
+                            I'm always open to discussing projects, opportunities, and innovative ideas. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        </p>
+
+                        <div class="contact-details">
+                            <a href="mailto:siddharthkumar5364@gmail.com" class="cd-item">
+                                <div class="cd-icon">
+                                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="cd-label">Email</span>
+                                    <span class="cd-val">siddharthkumar5364@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="cd-item">
+                                <div class="cd-icon">
+                                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="cd-label">GitHub</span>
+                                    <span class="cd-val">github.com/siddharthkumar</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="cd-item">
+                                <div class="cd-icon">
+                                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </div>
+                                <div>
+                                    <span class="cd-label">LinkedIn</span>
+                                    <span class="cd-val">linkedin.com/in/siddharthkumar</span>
+                                </div>
+                            </a>
+                            <div class="cd-item">
+                                <div class="cd-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <span class="cd-label">Location</span>
+                                    <span class="cd-val">Nawada, Bihar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-panel">
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)" novalidate>
+                            <!-- Honeypot field for spam protection -->
+                            <input type="text" name="_honeypot" id="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="from_name" placeholder="John Doe" required class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" id="email" name="from_email" placeholder="john@example.com" required class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Discussion / Job Opportunity" class="input-field">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message * (Min 10 chars)</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Hello Siddharth, I'd like to discuss a potential opportunity..." required class="input-field textarea"></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-xl magnetic-btn">
+                                <span class="spinner hidden"></span>
+                                <span class="btn-text">Send Message</span>
+                                <i data-lucide="send" class="icon-sm"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="monogram-sm">SK</span>
+                <span>Siddharth Kumar</span>
+            </div>
+            <p class="footer-copy">© 2026 Siddharth Kumar. Crafted with passion, Three.js, and clean code.</p>
+        </div>
+    </footer>
+
+    <!-- Beautiful Toast Notification Container -->
+    <div id="toast-container" class="toast-container" role="alert" aria-live="assertive"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
